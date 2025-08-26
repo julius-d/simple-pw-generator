@@ -1,1 +1,2 @@
 - Do not mention claude in the commit messages
+- use conventinal commit messages
