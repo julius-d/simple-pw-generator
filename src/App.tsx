@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div>
-      <h1>Random Password Generator</h1>
       <p style={{ fontSize: '24px', fontFamily: 'monospace', padding: '20px', backgroundColor: '#f5f5f5', border: '1px solid #ccc', borderRadius: '4px' }}>
         {password}
       </p>
