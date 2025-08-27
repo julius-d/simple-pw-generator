@@ -30,13 +30,15 @@ function App() {
     >
       <p
         style={{
-          fontSize: "48px",
+          fontSize: "clamp(24px, 8vw, 48px)",
           fontFamily: "monospace",
           fontWeight: "900",
           color: "white",
           textAlign: "center",
           textShadow: "2px 2px 4px rgba(0,0,0,0.8)",
           margin: 0,
+          padding: "0 20px",
+          wordBreak: "break-all",
         }}
       >
         {password}
