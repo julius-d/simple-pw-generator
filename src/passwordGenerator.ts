@@ -1,19 +1,82 @@
 const adjectives = [
-  'roter', 'blauer', 'gelber', 'schwarzer', 'schneller', 'langsamer', 'kleiner', 'alter', 'neuer', 'heller', 'dunkler', 'warmer', 'kalter',
-  'starker', 'schwacher', 'guter', 'schlechter', 'hoher', 'tiefer', 'breiter', 'schmaler'
+    "harter",
+    "weicher",
+    "reicher",
+    "armer",
+    "leichter",
+    "schwerer",
+    "tiefer",
+    "klarer",
+    "finsterer",
+    "mutiger",
+    "feiger",
+    "freundlicher",
+    "feindlicher",
+    "wilder",
+    "tapferer",
+    "edler",
+    "gemeiner",
+    "listiger",
+    "weiser",
+    "kluger",
+    "rasender",
+    "offener",
+    "harter",
+    "ferner",
+    "naher",
+    "fremder"
 ]
 
-const nouns = [
-  'Vogel', 'Hund', 'Baum', 'Berg', 'Fluss', 'Stern', 'Mond', 'Wind', 'Himmel'
-]
+const nouns =
+    [
+        "Vogel",
+        "Adler",
+        "Biber",
+        "Tiger",
+        "Luchs",
+        "Falke",
+        "Rabe",
+        "Fuchs",
+        "Wolf",
+        "Hund",
+        "Kater",
+        "Bock",
+        "Stier",
+        "Hirsch",
+        "Widder",
+        "Bulle",
+        "Hahn",
+        "Karpfen",
+        "Hecht",
+        "Aal",
+        "Loewe",
+        "Panther",
+        "Gepard",
+        "Puma",
+        "Bison",
+        "Drache",
+        "Greif",
+        "Troll",
+        "Ritter",
+        "Held",
+        "Knappe",
+        "Kaiser",
+        "Prinz",
+        "Graf",
+        "Baron",
+        "Krieger",
+        "Bauer",
+        "Seemann",
+        'Baum', 'Berg', 'Fluss', 'Stern', 'Mond', 'Wind', 'Himmel'
+    ]
 
 const specialChars = ['!', '?']
 
 export const generatePassword = (): string => {
-  const adjective = adjectives[Math.floor(Math.random() * adjectives.length)]
-  const noun = nouns[Math.floor(Math.random() * nouns.length)]
-  const numbers = Math.floor(1000 + Math.random() * 9000).toString()
-  const specialChar = specialChars[Math.floor(Math.random() * specialChars.length)]
+    const adjective = adjectives[Math.floor(Math.random() * adjectives.length)]
+    const noun = nouns[Math.floor(Math.random() * nouns.length)]
+    const numbers = Math.floor(1000 + Math.random() * 9000).toString()
+    const specialChar = specialChars[Math.floor(Math.random() * specialChars.length)]
 
-  return `${adjective}${noun}${numbers}${specialChar}`
+    return `${adjective}${noun}${numbers}${specialChar}`
 }
