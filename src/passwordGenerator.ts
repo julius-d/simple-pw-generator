@@ -25,6 +25,19 @@ const adjectives = [
   "ferner",
   "naher",
   "fremder",
+  "roter",
+  "blauer",
+  "gelber",
+  "schwarzer",
+  "brauner",
+  "grauer",
+  "violetter",
+  "orangener",
+  "goldener",
+  "silberner",
+  "bronzener",
+  "purpurner",
+  "beiger",
 ];
 
 const nouns = [
